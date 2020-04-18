@@ -1,0 +1,76 @@
+﻿@model Consumo.Web.Cliente.Models.Usuarios
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Eliminar Ususario</h2>
+<h3>¿Desea Eliminar El Siguiente Usuario?</h3>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            <b>ID:</b>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.int_id)
+        </dd>
+
+        <dt>
+            <b>Status:</b>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.str_status)
+        </dd>
+
+        <dt>
+            <b>Fecha:</b>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.dat_fecha)
+        </dd>
+
+        <dt>
+            <b>Nombre:</b>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.str_nombre)
+        </dd>
+
+        <dt>
+            <b>Dirección:</b>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.str_direccion)
+        </dd>
+
+        <dt>
+            <b>Departamento:</b>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.str_departamento)
+        </dd>
+
+        <dt>
+            <b>Teléfono:</b>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.int_telefono)
+        </dd>
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-danger"/>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.ActionLink("Regresar", "Index")
+            </div>
+        </div>
+
+
+
+    </dl>
+</div>
+
